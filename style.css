@@ -22,6 +22,12 @@ body {
   );
 }
 
+@media (max-width: 900px) {
+  .app-wrap {
+    grid-template-columns: 100%;
+  }
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -45,4 +51,43 @@ header input {
 
 header input:focus {
   background-color: rgba(red, green, blue, alpha);
+}
+
+main {
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: #fff;
+  font-size: 16px;
+}
+
+.main-temp .temp {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 30px 0;
+}
+
+.weather {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.high-low {
+  color: #fff;
+  font-size: 90px;
+  font-weight: 800;
 }
